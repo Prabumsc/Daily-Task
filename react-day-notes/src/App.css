@@ -2,10 +2,12 @@
 background-color: blue;
 display: flex;
 }
+.container{
+  display:flex;
+    flex-wrap: wrap;
+}
    
-   .col-lg-4{
-    display:flex;
-   }
+
    .card-body{
     background-color: rgb(233, 233, 237);
      }
