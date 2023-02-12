@@ -1,0 +1,6 @@
+{
+    "workbench.editor.enablePreview": true,
+    "[css]": {
+        "diffEditor.codeLens": true
+    }
+}
