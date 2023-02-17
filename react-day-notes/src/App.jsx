@@ -1,91 +1,93 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import './App.css'
+import CheckIcon from '@mui/icons-material/Check';
+
+import { CardActions, CardContent } from "@mui/material";
+// import InfoIcon from '@mui/icons-material/Info';
+import Button from '@mui/material/Button';
+import ClearIcon from '@mui/icons-material/Clear';
 export default function App() {
+
   return (
-    <section className="pricing py-5">
 
-      <div className="container">
-        <div className="row">
+    <div className='flex-row'>
 
-          <div className="col-lg-4">
-            <div className="card mb-5 mb-lg-0">
-              <div className="card-body">
-                <h5 className="card-title text-muted text-uppercase text-center">Free</h5>
-                <h6 className="card-price text-center">$0<span class="period">/month</span></h6>
+      <div style={{ margin: "20px" }}>
+        <div className='tag'>
+          <h5 className="top">FREE</h5>
+          <h6 className="down">$0<span class="period">/month</span></h6>
+          <hr class="mt-1 mb-1" />
 
-                <ul class="fa-ul">
-                  <li><span className="fa-li"><i className="fas fa-check"></i></span>Single User</li>
-                  <li><span className="fa-li"><i className="fas fa-check"></i></span>5GB Storage</li>
-                  <li><span className="fa-li"><i className="fas fa-check"></i></span>Unlimited Public Projects</li>
-                  <li><span className="fa-li"><i className="fas fa-check"></i></span>Community Access</li>
-                  <li className="text-muted"><span className="fa-li"><i class="fas fa-times"></i></span>Unlimited
-                    Private Projects</li>
-                  <li className="text-muted"><span className="fa-li"><i className="fas fa-times"></i></span>Dedicated
-                    Phone Support</li>
-                  <li className="text-muted"><span className="fa-li"><i className="fas fa-times"></i></span>Free Subdomain
-                  </li>
-                  <li className="text-muted"><span className="fa-li"><i className="fas fa-times"></i></span>Monthly Status
-                    Reports</li>
-                </ul>
-                <div className="d-grid">
-                  <a href="#" className="btn btn-primary text-uppercase">Button</a>
-                </div>
-              </div>
-            </div>
+          <ul class="fa-ul">
+            <span className="fa-li"><CheckIcon />  Single User</span>
+            <span className="fa-li"><CheckIcon />  5GB Storage</span>
+            <span className="fa-li"><CheckIcon />  Unlimited Public Projects</span>
+            <span className="fa-li"><CheckIcon />  Community Access</span>
+            < span className="fa-li textColor" > < ClearIcon />  Unlimited
+              Private Projects</span>
+
+
+            <span className="fa-li textColor">< ClearIcon /> Dedicated Phone Support</span>
+
+            <span className="fa-li textColor"><ClearIcon /> Free Subdomain</span>
+
+            <span className="fa-li textColor"><ClearIcon /> Monthly Status Reports</span>
+          </ul>
+
+          <div className="d-grid" >
+            <Button variant="contained" >Button</Button>
           </div>
 
-          <div className="col-lg-4">
-            <div className="card mb-5 mb-lg-0">
-              <div className="card-body">
-                <h5 className="card-title text-muted text-uppercase text-center">Plus</h5>
-                <h6 className="card-price text-center">$9<span className="period">/month</span></h6>
+        </div>
+      </div>
+      <div style={{ margin: "20px" }}>
+        <div className='tag'>
+          <h5 className="top">PLUS</h5>
+          <h6 className="down">$9<span className="period">/month</span></h6>
+          <hr class="mt-1 mb-1" />
+          <ul className="fa-ul">
+            <span className="fa-li"><CheckIcon />   <strong>5 Users</strong>        </span>
+            <span className="fa-li"><CheckIcon />   50GB Storage        </span>
+            <span className="fa-li"><CheckIcon />  Unlimited Public Projects         </span>
+            <span className="fa-li"><CheckIcon />  Community Access         </span>
+            <span className="fa-li"><CheckIcon />  Unlimited Private Projects           </span>
+            <span className="fa-li"><CheckIcon />   Dedicated Phone Support           </span>
+            <span className="fa-li"><CheckIcon />    Free Subdomain       </span>
+            <span className="fa-li textColor"><ClearIcon />      Monthly Status  Reports </span>
 
-                <ul className="fa-ul">
-                  <li><span className="fa-li"><i className="fas fa-check"></i></span><strong>5 Users</strong></li>
-                  <li><span className="fa-li"><i className="fas fa-check"></i></span>50GB Storage</li>
-                  <li><span className="fa-li"><i className="fas fa-check"></i></span>Unlimited Public Projects</li>
-                  <li><span className="fa-li"><i className="fas fa-check"></i></span>Community Access</li>
-                  <li><span className="fa-li"><i className="fas fa-check"></i></span>Unlimited Private Projects</li>
-                  <li><span className="fa-li"><i className="fas fa-check"></i></span>Dedicated Phone Support</li>
-                  <li><span className="fa-li"><i className="fas fa-check"></i></span>Free Subdomain</li>
-                  <li className="text-muted"><span className="fa-li"><i className="fas fa-times"></i></span>Monthly Status
-                    Reports</li>
-                </ul>
-                <div className="d-grid">
-                  <a href="#" className="btn btn-primary text-uppercase">Button</a>
-                </div>
-              </div>
-            </div>
+          </ul>
+          <div className="d-grid">
+            <Button variant="contained">Button</Button>
           </div>
 
-          <div className="col-lg-4">
-            <div className="card">
-              <div className="card-body">
-                <h5 className="card-title text-muted text-uppercase text-center">Pro</h5>
-                <h6 className="card-price text-center">$49<span className="period">/month</span></h6>
+        </div>
+      </div>
+      <div style={{ margin: "20px" }}>
+        <div className='tag'>
+          <h5 className="top">PRO</h5>
+          <h6 className="down">$49<span className="period">/month</span></h6>
+          <hr class="mt-1 mb-1" />
+          <ul className="fa-ul">
+            <span className="fa-li"><CheckIcon />  <strong>Unlimited Users</strong>  </span>
 
-                <ul className="fa-ul">
-                  <li><span className="fa-li"><i className="fas fa-check"></i></span><strong>Unlimited Users</strong>
-                  </li>
-                  <li><span className="fa-li"><i className="fas fa-check"></i></span>150GB Storage</li>
-                  <li><span className="fa-li"><i className="fas fa-check"></i></span>Unlimited Public Projects</li>
-                  <li><span className="fa-li"><i className="fas fa-check"></i></span>Community Access</li>
-                  <li><span className="fa-li"><i className="fas fa-check"></i></span>Unlimited Private Projects</li>
-                  <li><span className="fa-li"><i className="fas fa-check"></i></span>Dedicated Phone Support</li>
-                  <li><span className="fa-li"><i className="fas fa-check"></i></span><strong>Unlimited</strong> Free
-                    Subdomains</li>
-                  <li><span className="fa-li"><i className="fas fa-check"></i></span>Monthly Status Reports</li>
-                </ul>
-                <div className="d-grid">
-                  <a href="#" className="btn btn-primary text-uppercase">Button</a>
-                </div>
-              </div>
-            </div>
+            <span className="fa-li"><CheckIcon />  150GB Storage  </span>
+            <span className="fa-li"><CheckIcon />   Unlimited Public Projects </span>
+            <span className="fa-li"><CheckIcon />   Community Access </span>
+            <span className="fa-li"><CheckIcon />   Unlimited Private Projects </span>
+            <span className="fa-li"><CheckIcon />   Dedicated Phone Support </span>
+            <span className="fa-li"><CheckIcon />   <strong>Unlimited</strong> Free Subdomains </span>
+
+            <span className="fa-li"><CheckIcon />  Monthly Status Reports   </span>
+          </ul>
+          <div className="d-grid">
+            <Button variant="contained">Button</Button>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+
+
   )
 }
 
