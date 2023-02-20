@@ -56,19 +56,69 @@ color:	#c0c0c0;
   margin-bottom: 1rem;
  
 }
-
-
-
-
-
-
-
 @media (min-width: 992px) {
   .pricing .card:hover {
     margin-top: -.25rem;
     margin-bottom: .25rem;
     box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.3);
   }
+}
+
+.card{
+  width: 180vh;
+ /* height:320px ; */
+  display:flex;
+  /* flex-direction: column; */
+ flex-wrap: wrap;
+
+ margin: 50px;
+
+
+
+
+}
+ .price{
+ height:100px ;
+width:200px;
+padding-top: 50px;
+text-align: center;
+background-color:rgb(226, 230, 236);
+
+
+}
+
+.para{
+
+  text-align: center;
+  
+background-color:white;
+border-radius: 1rem;
+transition: all 0.2s;
+
+}
+.pass{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.size{
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+font-size: 25px ;
+margin-top:10px;
+text-align: center;
+
+
+}
+.btn{
+  line-height: 50px;
+  margin-bottom: 0%;
+ 
+}
+.card11{
+  width: 200px;
+  border: 1px solid rgb(226, 230, 236);
+ margin: 20px;
+ border-radius: 0.25rem;
+ transition: all 0.2s;
+
 }
 
 
