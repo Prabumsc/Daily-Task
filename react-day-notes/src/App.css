@@ -95,7 +95,7 @@ color:	#c0c0c0;
   border: none;
   outline: none;
   color: rgb(29, 28, 28);
-  padding: 14px 16px;
+  padding: 16px 16px;
   background-color: inherit;
   font-family: inherit; 
   margin: 0;
@@ -122,6 +122,16 @@ color:	#c0c0c0;
 .dropdown:hover .dropdown-content {
   display: block;
 }
+.shop{
+  text-align: right;
+  border: "2px solid black";
+  background: "white";
+  color: "black";
+ padding-right: 80px;
+font-size: 10px;
+
+}
+
 .content{
   background-color: black;
 color:whitesmoke;
@@ -130,6 +140,8 @@ text-align: center;
 
 
 }
+
+
 
 .content1{
   height: 200px;
