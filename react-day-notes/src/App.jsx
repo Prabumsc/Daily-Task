@@ -13,7 +13,7 @@ import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import IconButton from '@mui/material/IconButton';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import CircleOutlinedIcon from '@mui/icons-material/CircleOutlined';
-import Day2 from './Day2'
+
 
 export default function App() {
   const [counter, setCounter] = useState();
